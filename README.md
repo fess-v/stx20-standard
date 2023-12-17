@@ -103,6 +103,6 @@ STX20 embodies the principle of decentralization:
 
 - Explorer & inscription tools - https://stx20.com
 - Discord - https://discord.gg/stx20
-- Twitter - https://twitter.com/stx20stacks, https://twitter.com/fess_v_
+- Twitter - https://twitter.com/stx20stacks, `https://twitter.com/fess_v_`
 
 
