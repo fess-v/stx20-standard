@@ -59,6 +59,7 @@ Structure: `{operation}{ticker}{amount}`
 
 The protocol is designed for expansion with additional operation types planned.
 Additional protocol improvements are published under the `stxsip-proposals` directory.
+Currently, `Stxsip` proposals lack a standardized format, but there are plans to establish a uniform structure in the future.
 
 Ratified proposals:
 - `.stxs` domain name system - [#000](stxsip-proposals/stxsip-000_stxs-domain-name-system.md)
