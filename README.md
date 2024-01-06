@@ -57,7 +57,12 @@ Structure: `{operation}{ticker}{amount}`
 
 ### Future Developments
 
-- The protocol is designed for expansion with additional operation types planned.
+The protocol is designed for expansion with additional operation types planned.
+Additional protocol improvements are published under the `stxsip-proposals` directory.
+
+Ratified proposals:
+- `.stxs` domain name system - [#000](stxsip-proposals/stxsip-000_stxs-domain-name-system.md)
+- `Stxmap` project - [#001](stxsip-proposals/stxsip-001_stxmap.md)
 
 ### Security
 
@@ -88,11 +93,6 @@ STX20 embodies the principle of decentralization:
 - Get address balance: `/balance/{address}`
 - Token details: `/token/{ticker}`
 - Deployed tokens with pagination: `/token?page={page}&limit={limit}`
-
-### Upcoming Features
-
-- Event tracking details.
-- Trading.
 
 ### Open Source Commitment
 
