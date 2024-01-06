@@ -29,7 +29,7 @@ The proposal maintains consistency with the initial STX transfer memo protocol.
 
 Both minting and transferring are based on the same format. The first wallet to claim a specific Stxmap block will secure its ownership to the designated transfer address.
 
-Format: `{blockNumber}.stxmap`, for example, `1.stxmap`. The `.stxmap` is case-insensitive.
+Format: `{blockNumber}.stxmap`, for example, `1.stxmap`. The `.stxmap` part is case-insensitive.
 
 The `blockNumber` should be an integer, with the upper limit being the block number where the mint transaction for claiming the Stxmap block ownership occurs. Wallet owners can hold multiple Stxmap blocks.
 

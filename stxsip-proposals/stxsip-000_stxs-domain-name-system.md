@@ -37,7 +37,7 @@ This proposal adheres to the initial protocol STX transfer memo structure.
 
 Both minting and transferring follow the same format, except the first wallet to claim a specific domain name secures its ownership to the transfer destination address.
 
-Format: `{domainName}.stxs` (e.g., `fess-v.stxs`). `.stxs` is case-insensitive.
+Format: `{domainName}.stxs` (e.g., `fess-v.stxs`). The `.stxs` part is case-insensitive.
 
 Domain names can include `-`, `_`, English letters, and numbers. The length should be between 0 and 25 characters. Wallets may possess multiple domain names. If any uppercase letters are used, they will be converted and indexed as lowercase letters
 
