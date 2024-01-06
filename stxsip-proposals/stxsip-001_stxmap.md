@@ -33,17 +33,17 @@ Format: `{blockNumber}.stxmap`, for example, `1.stxmap`. The `.stxmap` is case-i
 
 The `blockNumber` should be an integer, with the upper limit being the block number where the mint transaction for claiming the Stxmap block ownership occurs. Wallet owners can hold multiple Stxmap blocks.
 
-### Activation
+## Activation
 
 Following comprehensive discussions within the community, it has been decided that STXSIP #000 and #001 will be retrospectively activated, aligning with the initial STX20 activation block at 132354.
 
-### API Endpoints
+## API Endpoints
 
 Base URL: `https://api.stx20.com/api/v1`
 
 - Get Stxmap blocks: `/stxmap?address={address}&page={page}&limit={limit}`
 - Stxmap block details: `/stxmap/{blockNumber}`
 
-## Acknowledgements
+## Acknowledgments
 
 Special thanks to the community members for their invaluable contributions and active participation in the STXSIP discussions.

@@ -45,7 +45,7 @@ Domain names can include `-`, `_`, English letters, and numbers. The length shou
 
 Following comprehensive discussions within the community, it has been decided that STXSIP #000 and #001 will be retrospectively activated, aligning with the initial STX20 activation block at 132354.
 
-### API Endpoints
+## API Endpoints
 
 Base URL: `https://api.stx20.com/api/v1`
 
