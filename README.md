@@ -32,7 +32,6 @@ This refined strategy ensures STX20's compatibility with Stacks' specifications,
 - Inscriptions adhere to Stacks network's standard base64 format.
 - The recipient of the STX transfer transaction is the designated receiver for mints and transfers.
 - Mints or transfers beyond limits are marked as failed.
-- STX transfers from smart contracts are not supported at the moment, since it would allow minting in batches in a single transaction, which would break the fair mint logic.
 - The first lowercase letter in the memo indicates the operation type.
 
 ### Operations
@@ -64,6 +63,7 @@ Currently, `Stxsip` proposals lack a standardized format, but there are plans to
 Ratified proposals:
 - `.stxs` domain name system - [#000](stxsip-proposals/stxsip-000_stxs-domain-name-system.md)
 - `Stxmap` project - [#001](stxsip-proposals/stxsip-001_stxmap.md)
+- Transfers through smart contracts - [#002](stxsip-proposals/stxsip-002_batch-transfers.md)
 
 ### Security
 
