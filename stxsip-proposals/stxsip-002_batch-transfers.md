@@ -4,9 +4,9 @@
 
 - **STXSIP Number:** #002
 - **Title:** Batch Transfers
-- **Status:** Draft
+- **Status:** Ratified
 - **Date Created:** 2024-02-24
-- **Activation block:** To be defined
+- **Activation block:** 142680
 
 ## Overview
 
@@ -84,7 +84,9 @@ If a smart contract call event does not conform to the protocol transaction stru
 
 ## Activation
 
-To be defined
+The activation of this proposal will be a result of thorough discussions with the creators of the protocol indexers.
+It has been unanimously agreed that this proposal will be activated at block 142680.
+This strategic decision ensures that the implementation is seamless and aligns with the current state.
 
 ## Acknowledgments
 
