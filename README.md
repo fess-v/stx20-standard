@@ -65,6 +65,9 @@ Ratified proposals:
 - `Stxmap` project - [#001](stxsip-proposals/stxsip-001_stxmap.md)
 - Transfers through smart contracts - [#002](stxsip-proposals/stxsip-002_batch-transfers.md)
 
+Proposed enhancements:
+- Bulk minting operations - [#003](stxsip-proposals/stxsip-003_bulk-minting.md)
+
 ### Security
 
 - **Immutable Records:** Leveraging the inherent security of the Stacks blockchain, every transaction and inscription is permanently recorded, ensuring transparency and traceability.
@@ -105,5 +108,3 @@ STX20 embodies the principle of decentralization:
 - Explorer & inscription tools - https://stx20.com
 - Discord - https://discord.gg/stx-20
 - Twitter - https://twitter.com/stx20stacks, `https://twitter.com/fess_v_`
-
-
