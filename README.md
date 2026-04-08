@@ -2,8 +2,25 @@
 
 The STX20 protocol introduces a novel approach to creating and sharing digital artifacts on the Stacks blockchain.
 It leverages the transaction `memo` field to offer a more efficient, gas-saving alternative to conventional smart contracts for specific use cases.
-This method not only requires less computational effort but also pays homage to Bitcoin culture. 
+This method not only requires less computational effort but also pays homage to Bitcoin culture. 
 The anticipated Nakamoto upgrade is set to enhance Stacks' decentralization and integration with the Bitcoin network, highlighting the importance of an inscription standard like STX20 on Stacks.
+
+---
+
+## 📍 Table of Contents
+* [How It Works](#how-it-works)
+* [Protocol Specifications](#protocol-specifications)
+* [Operations](#operations)
+* [Future Developments](#future-developments)
+* [Security](#security)
+* [Decentralization at its Core](#decentralization-at-its-core)
+* [Trading](#trading)
+* [Current indexer API](#current-indexer-api)
+* [Open Source Commitment](#open-source-commitment)
+* [Links](#links)
+* [Contributing](#contributing)
+
+---
 
 ## How It Works
 
@@ -34,27 +51,29 @@ This refined strategy ensures STX20's compatibility with Stacks' specifications,
 - Mints or transfers beyond limits are marked as failed.
 - The first lowercase letter in the memo indicates the operation type.
 
-### Operations
+## Operations
+
+| Operation | Action | Structure | Example |
+| :--- | :--- | :--- | :--- |
+| **Deploy** | Create new token | `{operation}{ticker}{total_supply};{limit_per_mint}` | `dstxs21000000;1000` |
+| **Mint** | Generate tokens | `{operation}{ticker}{amount}` | `mstxs1000` |
+| **Transfer** | Send tokens | `{operation}{ticker}{amount}` | `tstxs90` |
+
+### Detailed Operation Examples:
 
 #### Deploy
-
 Structure: `{operation}{ticker}{total_supply};{limit_per_mint}`
-
 - Example: `dstxs21000000;1000`
 
 #### Mint
-
 Structure: `{operation}{ticker}{amount}`
-
 - Example: `mstxs1000`
 
 #### Transfer
-
 Structure: `{operation}{ticker}{amount}`
-
 - Example: `tstxs90`
 
-### Future Developments
+## Future Developments
 
 The protocol is designed for expansion with additional operation types planned.
 Additional protocol improvements are published under the `stxsip-proposals` directory.
@@ -65,13 +84,13 @@ Ratified proposals:
 - `Stxmap` project - [#001](stxsip-proposals/stxsip-001_stxmap.md)
 - Transfers through smart contracts - [#002](stxsip-proposals/stxsip-002_batch-transfers.md)
 
-### Security
+## Security
 
 - **Immutable Records:** Leveraging the inherent security of the Stacks blockchain, every transaction and inscription is permanently recorded, ensuring transparency and traceability.
 - **Open-source Rules:** The protocol's rules are openly available for review and scrutiny. This transparency allows for community oversight, encouraging continuous improvement and trust.
 - **User Empowerment:** Users can independently verify transactions and inscriptions. This self-verification process eliminates reliance on third parties, enhancing security.
 
-### Decentralization at its Core
+## Decentralization at its Core
 
 STX20 embodies the principle of decentralization:
 
@@ -79,7 +98,7 @@ STX20 embodies the principle of decentralization:
 - **Indexer as a Viewer:** The indexer's role is limited to providing a view of the blockchain data. It does not possess the ability to alter or manipulate this data, thus maintaining the integrity and decentralization of the protocol.
 - **Community-driven Development:** The development and future enhancements of the STX20 protocol are community-driven, fostering a decentralized and democratic process for protocol evolution.
 
-### Trading
+## Trading
 
 - Decentralized trading features are in development.
 
@@ -95,10 +114,9 @@ STX20 embodies the principle of decentralization:
 - Token details: `/token/{ticker}`
 - Deployed tokens with pagination: `/token?page={page}&limit={limit}`
 
-### Open Source Commitment
+## Open Source Commitment
 
 - Indexer, inscription tool, and explorer will be open-sourced soon.
-
 
 ## Links
 
@@ -106,4 +124,11 @@ STX20 embodies the principle of decentralization:
 - Discord - https://discord.gg/stx-20
 - Twitter - https://twitter.com/stx20stacks, `https://twitter.com/fess_v_`
 
+---
 
+## 🤝 Contributing
+
+We welcome community contributions to the STX20 protocol. 
+1. **Standardization:** Ensure all proposals fit within the 34-symbol memo limit.
+2. **Transparency:** All protocol changes must be submitted via the `stxsip-proposals` directory.
+3. **Process:** Fork the repository, create a descriptive branch, and submit a Pull Request for review.
